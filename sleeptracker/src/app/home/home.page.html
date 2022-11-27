@@ -12,9 +12,24 @@
       <ion-title size="large">Sleep Tracker</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="sleep">
+      <ion-icon name="bed-outline"></ion-icon>
+      <ion-label>Sleep</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="sleepiness">
+      <ion-icon name="body-outline"></ion-icon>
+      <ion-label>Sleepiness</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="data">
+      <ion-icon name="bar-chart-outline"></ion-icon>
+      <ion-label>Data</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
