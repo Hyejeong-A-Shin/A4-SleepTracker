@@ -3,6 +3,7 @@ import { SleepService } from '../services/sleep.service';
 import { SleepData } from '../data/sleep-data';
 import { OvernightSleepData } from '../data/overnight-sleep-data';
 import { StanfordSleepinessData } from '../data/stanford-sleepiness-data';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ import { StanfordSleepinessData } from '../data/stanford-sleepiness-data';
 })
 export class HomePage {
 
-	constructor(public sleepService:SleepService) {
+	constructor(public sleepService:SleepService, private route:Router) {
 
 	}
 
@@ -22,6 +23,10 @@ export class HomePage {
 	/* Ionic doesn't allow bindings to static variables, so this getter can be used instead. */
 	get allSleepData() {
 		return SleepService.AllSleepData;
+	}
+
+	goPageSleepiness():{
+		this.route.navigate(['/stanford-sleepiness-data']);
 	}
 
 }

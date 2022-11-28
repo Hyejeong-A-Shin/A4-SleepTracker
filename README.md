@@ -1,4 +1,5 @@
---Readme document for *author(s)*, *email(s)*, *UCI id(s)*--
+--Readme document for *author(s)*, *email(s)*, *UCI id(s)*
+--
 
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
@@ -17,6 +18,9 @@
 
 3. What online resources did you consult when completing this assignment? (list specific URLs)
 
+For going to another page: https://stackoverflow.com/questions/40245847/how-to-go-to-another-page-with-a-button-click-with-ionic
+
+For :
 
 
 4. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
