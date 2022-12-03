@@ -1,7 +1,8 @@
 {
-  "name": "a4-sleeptracker-f22",
+  "name": "sleeptracker",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

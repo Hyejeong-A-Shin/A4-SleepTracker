@@ -1,0 +1,35 @@
+
+
+<ion-content class="ion-padding">
+  <form #timeForm="ngForm" (ngSubmit)="onSubmit(timeForm)">
+    <h2 class="ion-text-center">When did you sleep?</h2>
+
+    <ion-item class="ion-padding">
+      <ion-datetime
+        display-format="MMM D h:mm A"
+        picker-format="MMM D h:mm A"
+        placeholder="Select Time"
+        name="sleepTime"
+        [(ngModel)]="sleepTime"
+      ></ion-datetime>
+    </ion-item>
+
+    <h2 class="ion-text-center">When did you wake up?</h2>
+
+    <ion-item>
+      <ion-datetime
+        display-format="MMM D h:mm A"
+        picker-format="MMM D h:mm A"
+        placeholder="Select Time"
+        name="wakeTime"
+        [(ngModel)]="wakeTime"
+      ></ion-datetime>
+    </ion-item>
+
+    <br />
+    <br />
+    <ion-row class="ion-justify-content-center">
+      <ion-button class="record" color="light" type="submit">submit</ion-button>
+    </ion-row>
+  </form>
+</ion-content>

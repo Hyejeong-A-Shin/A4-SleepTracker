@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sleep/Sleepiness Log</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="allData.length > 0" class="ion-padding">
+
+
+  <ion-item *ngFor="let data of allData">
+    <ion-card>
+      <ion-card-header>{{ data.dateString() }} </ion-card-header>
+      <ion-card-content>{{ data.summaryString() }}</ion-card-content>
+      <ion-button (click)="deleteData(data.id)" color="danger">delete</ion-button>
+    </ion-card>
+  </ion-item>
+</ion-content>
+
+<ion-content padding *ngIf="allData.length === 0">
+  <ion-row>
+    <h4 class="ion-text-center center">
+      You have not recorded any data yet
+    </h4>
+  </ion-row>
+</ion-content>
