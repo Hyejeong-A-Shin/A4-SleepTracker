@@ -39,4 +39,5 @@ export class DataPage implements OnInit {
     this.sleepService.removeData(id, otherID, type);
 
   }
+
 }

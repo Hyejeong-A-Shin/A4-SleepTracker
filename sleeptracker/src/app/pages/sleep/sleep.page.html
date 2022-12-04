@@ -1,8 +1,13 @@
-
+<ion-header> 
+<ion-toolbar>
+  <ion-title style="background-color: #3973ac; width: 100%; height: 60px; padding: 20px; margin: auto; font-size: 27.3px; text-align: center; color: white;"> Sleep</ion-title>
+</ion-toolbar>
+</ion-header>
 
 <ion-content class="ion-padding">
+
   <form #timeForm="ngForm" (ngSubmit)="onSubmit(timeForm)">
-    <h2 class="ion-text-center">When did you sleep?</h2>
+    <h2 class="ion-text-center" style="color: #3973ac; font-family: 'Times New Roman', Verdana, Arial"> Yesterday, I slept at...</h2>
 
     <ion-item class="ion-padding">
       <ion-datetime
@@ -14,9 +19,9 @@
       ></ion-datetime>
     </ion-item>
 
-    <h2 class="ion-text-center">When did you wake up?</h2>
+    <h2 class="ion-text-center" style="color: #3973ac; font-family: 'Times New Roman', Verdana, Arial;">Today, I woke up at...</h2>
 
-    <ion-item>
+    <ion-item class="ion-padding">
       <ion-datetime
         display-format="MMM D h:mm A"
         picker-format="MMM D h:mm A"
@@ -29,7 +34,7 @@
     <br />
     <br />
     <ion-row class="ion-justify-content-center">
-      <ion-button class="record" color="light" type="submit">submit</ion-button>
+      <ion-button class="record" color="warning" type="submit" style="margin-top: 0; color: black; width: 144px; height: 42px; font-family: 'Times New Roman', Verdana, Arial;">submit</ion-button>
     </ion-row>
   </form>
 </ion-content>

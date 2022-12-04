@@ -1,11 +1,12 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title slot="start">Sleepiness Rating </ion-title>
+    <ion-title style="text-align: center; font-size: 27.3px; background-color: #3973ac; color: white; width: 100%; padding: 20px; margin: auto; height: 60px">Sleepiness </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-  <h2 class="ion-text-center">Rate your sleepiness out of 7</h2>
+  <h2 class="ion-text-center" style="font-size: 20px;">Rate Your Sleepiness</h2>
+  <h4 style="font-size: 12px; color: gray; text-align: center; margin-bottom: 50px; margin-left: 40px; margin-right: 40px; font-family:'Times New Roman', Verdana, Arial;">You can log this as many times as you need to throughout the day!</h4>
 
   <ng-container *ngFor="let description of sleepScale;let i = index;">
     <ion-card *ngIf="i > 0" (click)="addSleepiness(i)">

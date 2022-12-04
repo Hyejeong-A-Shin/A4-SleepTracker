@@ -1,6 +1,7 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Sleep/Sleepiness Log</ion-title>
+    <ion-title style="text-align: center; font-size: 27.3px; background-color: #3973ac; color: white; width: 100%; padding: 20px; margin: auto; height: 60px">Data Log</ion-title>
+
   </ion-toolbar>
 </ion-header>
 
@@ -9,9 +10,9 @@
 
   <ion-item *ngFor="let data of allData">
     <ion-card>
+      <ion-button (click)="deleteData(data.id)" color="danger">delete</ion-button>
       <ion-card-header>{{ data.dateString() }} </ion-card-header>
       <ion-card-content>{{ data.summaryString() }}</ion-card-content>
-      <ion-button (click)="deleteData(data.id)" color="danger">delete</ion-button>
     </ion-card>
   </ion-item>
 </ion-content>
